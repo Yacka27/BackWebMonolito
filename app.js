@@ -1,3 +1,4 @@
+const dotenv = require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -18,7 +19,7 @@ const marca = require('./routes/marca')
 const inventario = require('./routes/inventario')*/
 
 // middlewares
-app.use('/api/tiposproyectos', tipoProyecto)
+app.use('/api/tipoproyectos', tipoProyecto)
 /*app.use('/api/estados', estado)
 app.use('/api/usuarios', usuario)
 app.use('/api/marcas', marca)
